@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programming</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../../Topic_page_assets/topic.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="logo.svg" alt="Logo Image"> -->
+            <h2 class="nav_logo_topic_page"><a class=" nav_logo_topic_page" href="../../../index.html">EduTech</a></h2>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger_div line1"></div>
+            <div class="hamburger_div line2"></div>
+            <div class="hamburger_div line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html">Topics</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#about_section">About</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#services_section">Services</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#contactus_section">Contact</a>
+            </li>
+            <!-- <li class="nav_links_li"> -->
+            <div class="srch">
+                <input type="text" class="search" placeholder="Search here...">
+                <img src="../../../images/icon/search.png" alt="search" onclick=slide()>
+            </div>
+            <!-- </li> -->
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+                <li><button class="join-button" href="#">Join</button></li> -->
+
+        </ul>
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content Body start -->
+    <main>
+        <!-- content start -->
+        <div><br>
+            <h1><b>Java</b></h1><br><br>
+
+            <section id="output" class="content_body">
+                <h2 class="topic_heading">Output in Java</h2>
+                <p class="content_text">
+                    In Java, output is the term used to describe the data that your application shows to the user,
+                    either on the console or via other interfaces such as graphical programs. When a program is being
+                    executed, output is essential for conveying the knowledge or the outcomes of calculations. Together
+                    with some examples, let's examine how to generate output in Java. <br>
+                    There are 2 types of output in Java. <br>
+                    <li style="font-size:20px;"><b>System.out</b></li>
+                    <li style="font-size:20px;"><b>System.err</b></li>
+                <p class="content_text">
+                    <b>System.out:</b> <br>
+                    It is possible to write characters to the PrintStream <b>System.out.</b> The console receives the
+                    data that is written to System.out. In order to show the user the outcome of their operation,
+                    console-only programs such as command line tools frequently use System.out. <i>While it might not be
+                        the ideal method to extract debug information from a program, this is also frequently used to
+                        print debug statements from programs.</i> It is possible to write characters to the PrintStream
+                    <b>System.out.</b> The console receives the data that is written to System.out. <br> <br>
+
+                    <b>Types of printing statements:</b>
+                    <li style="font-size:20px;"><b>System.out.print():</b> print the statement in <i>same</i> line.</li>
+                    <li style="font-size:20px;"><b>System.out.println():</b> print the statement in <i>new</i> line.
+                    </li>
+                    <li style="font-size:20px;"><b>System.out.printf():</b> for using formatting.</li>
+
+                    <img src="Java_content_img/output_in_java/imp_for_user_input.png" alt="outputs" width="650"
+                        height="350">
+                </p>
+                </p>
+            </section>
+
+            <section id="conditional_statements" class="content_body">
+                <h2 class="topic_heading">Conditional Statements in Java</h2>
+                <p class="content_text">
+                    To make decisions in a program based on certain conditions, programmers in Java use conditional
+                    statements. Else, if, and else are the primary limitations. If a given condition is <b>true</b> or
+                    <b>false</b>, these statements enable the program to run distinct lines of code based on the
+                    situation. In order to build logic that can react dynamically to data or input, developers need to
+                    be able to control the flow of their programs. <i>This helps to further increase the program's
+                        flexibility and power</i>. <br>
+                    There are 4 types of Java conditional statements. All of these are widely used according to their
+                    syntaxes and use cases. <br>
+                    <li style="font-size:20px;"><b>If statement</b>.</li>
+                    <li style="font-size:20px;"><b>If-Else statement</b>.</li>
+                    <li style="font-size:20px;"><b>Else If statement</b>.</li>
+                    <li style="font-size:20px;"><b>Switch Case</b>.</li>
+                </p>
+
+                <p class="content_text">
+                    <b>If statement: </b> <br>
+                    Assume that if a statement is used to execute the program, <i>then a condition is true</i>. An
+                    alternative name for it is a <b>one-way selection statement</b>. An argument is passed and the
+                    corresponding code is executed if the condition is met, if not, nothing happens. <br>
+
+                    <img src="Java_content_img/conditional_statements/if_statement_diagram.png" alt="outputs"
+                        width="500" height="300"> <br>
+
+                    <b>Syntax:</b><br>
+                <pre>
+                            <code style="font-size: 15px;">
+                                <b>
+                                    if (expression) {
+                                        // You can enter the code here
+                                    }
+                                </b>
+                            </code>
+                        </pre>
+                </p>
+                <p class="content_text">
+                    <b>Examples: </b> <br>
+                    <img src="Java_content_img/conditional_statements/if_statement_example.png" alt="if-statement"
+                        width="850" height="400"> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>If Else statement: </b> <br>
+                    An if-else statement is a control structure that determines which statements to choose based on a
+                    set of conditions. <br>
+
+                    <img src="Java_content_img/conditional_statements/if_else_statement_diagram.png" alt="outputs"
+                        width="500" height="300"> <br>
+
+                    <b>Syntax:</b><br>
+                <pre>
+                            <code style="font-size: 15px;">
+                                <b>
+                                    if (condition) {
+                                        // Statements that will be carried out if the condition is satisfied
+                                    } else {
+                                        // Statements that will be carried out if the condition is not met
+                                    }
+                                </b>
+                            </code>
+                        </pre>
+                </p>
+                <p class="content_text">
+                    <b>Examples: </b> <br>
+                    <img src="Java_content_img/conditional_statements/if_else_example.png" alt="if-statement"
+                        width="850" height="400"> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Else If statement: </b> <br>
+                    An if-else-if ladder in Java can execute one code block while multiple other blocks are executed.
+                    <br>
+
+                    <img src="Java_content_img/conditional_statements/else_if_diagram.png" alt="outputs" width="500"
+                        height="450"> <br>
+
+                    <b>Syntax:</b><br>
+                <pre>
+                            <code style="font-size: 15px;">
+                                <b>
+                                    if (condition1) { 
+                                        // Executable code if condition1 is true,
+                                    } else if (condition2) { 
+                                        // Executable code if condition2 is true  
+                                    } 
+                                    ... 
+                                    else { 
+                                        // Executable code if all the conditions are false  
+                                    }
+                                </b>
+                            </code>
+                        </pre>
+                </p>
+                <p class="content_text">
+                    <b>Examples: </b> <br>
+                    <img src="Java_content_img/conditional_statements/else_if_example.png" alt="if-statement"
+                        width="100%" height="400"> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Switch Case statement: </b> <br>
+                    <i>The switch statement can be executed in multiple ways</i>, unlike the if-else statement.
+                    Furthermore, by concentrating its evaluation on a small number of primitive or class types, it
+                    compares the value of the expression to its cases. <br>
+
+                    <b>Syntax:</b><br>
+                <pre>
+                            <code style="font-size: 15px;">
+                                <b>
+                                    switch (Expression) {
+                                        case value 1:
+                                            // Statement 1;
+                                        case value 2:
+                                            // Statement 2;
+                                        case value 3:
+                                            // Statement 3;                    
+                                        case value n:
+                                            // Statement n;
+                                        Default:
+                                            // default statement;
+                                    }
+                                </b>
+                            </code>
+                        </pre>
+                </p>
+                <p class="content_text">
+                    <b>Examples: </b> <br>
+                    <img src="Java_content_img/conditional_statements/switch_csse_example.png" alt="if-statement"
+                        width="950" height="475"> <br>
+                </p>
+
+            </section>
+
+            <section id="ternary_operator" class="content_body">
+                <h2 class="topic_heading">Ternary Operator in Java</h2>
+                <p class="content_text">
+                    <i>This is a short form of if-else.</i> <br>
+                    A simple syntax for figuring out whether a condition is true or false in Java is provided by the
+                    ternary operator. Based on the result of the Boolean test, <b>it returns a value</b>. <br>
+                    To write more compact code, one can use ternary operators in place of if-else statements in Java.
+                    <i>Professional programmers appreciate how the Java ternary operator makes their code more
+                        understandable and straightforward</i>. <br> <br>
+                    <img src="Java_content_img/conditional_statements/ternary_operator_diagram.png" alt="outputs"
+                        width="500" height="300"> <br>
+                    <b>Syntax:</b><br>
+                <pre>
+                        <code style="font-size: 15px;">
+                            <b>
+                                variable = (condition) ? (return if true) : (return if false);
+                            </b>
+                        </code>
+                    </pre>
+                </p>
+
+                <p class="content_text">
+                    <b>Examples: </b> <br>
+                    <img src="Java_content_img/conditional_statements/ternary_operator_example.png"
+                        alt="ternary_operator" width="100%" height="400"> <br>
+                </p>
+
+            </section>
+
+            <section id="loops" class="content_body">
+                <h2 class="topic_heading">Loops in Java</h2>
+                <p class="content_text">
+                    A loop is a <i>control flow structure</i> in programming that permits the repetition of a specific
+                    code block several times. By <b>automating repetitive activities</b>, loops allow code to be
+                    executed more concisely and efficiently while carrying out the same set of instructions without
+                    repeating itself. They make it possible for programmers to create programs that can deal with
+                    scenarios in which an <b>iterative</b> process must be carried out. <br>
+                    <b>(Loops can execute a block of code as long as a specified condition is reached. It saves time,
+                        reduce errors, and code is more readable.)</b> <br>
+                    <em>There are several types of loops, and the choice of which one to use depends on the specific
+                        requirements of the task. The primary types of loops are:</em> <br>
+                    <li style="font-size:20px;"><b>for loop</b>.</li>
+                    <li style="font-size:20px;"><b>while loop</b>.</li>
+                    <li style="font-size:20px;"><b>do-while loop</b>.</li>
+                    <li style="font-size:20px;"><b>for-each loop</b>.</li>
+                </p>
+
+                <p class="content_text">
+                    <b>for loop:</b> <br>
+                    A Java control flow statement called a <b>for</b> loop enables you to <em>run a code block a
+                        predetermined number of times repeatedly.</em> It is especially helpful if you know ahead of
+                    time how many iterations there will be. The three components of the <b>for</b> loop's syntax are the
+                    update <i>statement</i>, the <i>condition</i>, and the <i>initialization</i>. <br><br>
+                <div class="info">
+                    <b>Because the for loop verifies the conditions before printing, it is also known as an
+                        <i>entry-controlled loop</i>.</b>
+                </div>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>Syntax:</b>
+                <pre>
+                    <code>
+                        <b>
+                            for(initialization; Boolean_expression; update) {
+                                // Statements
+                             }
+                        </b>
+                    </code>
+                </pre> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Diagram:</b> <br>
+                    <img src="Java_content_img/loops_in_java/for_loop_diagram.png" alt="for_loop_diagram" width="500"
+                        height="500"> <br>
+
+                    <b>Here is the flow of control in a for loop −</b> <br>
+                    <li style="font-size:20px;">The <b>initialization</b> step is executed first, and only once. This
+                        step allows you to declare and initialize any loop control variables and this step ends with a
+                        semi colon (;)</li>
+                    <li style="font-size:20px;">Next, the <b>Boolean expression</b> is evaluated. If it is true, the
+                        body of the loop is executed. If it is false, the body of the loop will not be executed and
+                        control jumps to the next statement past the for loop.</li>
+                    <li style="font-size:20px;">After the <b>body</b> of the for loop gets executed, the control jumps
+                        back up to the update statement. This statement allows you to update any loop control variables.
+                        This statement can be left blank with a semicolon at the end.</li>
+                    <li style="font-size:20px;">The Boolean expression is now evaluated again. If it is true, the loop
+                        executes and the process repeats (body of loop, then update step, then Boolean expression).
+                        After the Boolean expression is false, the for loop terminates.</li>
+                </p>
+
+                <p class="content_text">
+                    <b>Examples: Calculating the Sum of Numbers</b> <br>
+                    <img src="Java_content_img/loops_in_java/for_loop_example.png" alt="for_loop_example" width="900"
+                        height="450"> <br>
+                </p>
+
+                <p class="content_text">
+                <div class="info">
+                    <p><strong>We can utilize the for loop if the value is fixed for iteration.</strong></p>
+                </div> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>while loop:</b> <br>
+                    Java's while loop is a control flow statement that lets you run a code block continuously as long as
+                    a certain condition is met. <i>It is especially helpful in situations where the loop is conditional
+                        and the number of iterations is unknown in advance.</i> <br>
+                <div class="info">
+                    <b>Because the while loop verifies the conditions before printing, it is also known as an
+                        <i>entry-controlled loop</i>.</b>
+                </div>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>Syntax:</b>
+                <pre>
+                    <code>
+                        <b>
+                            while(Boolean_expression) {
+                                // Statements
+                             }
+                        </b>
+                    </code>
+                </pre> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Diagram:</b> <br>
+                    <img src="Java_content_img/loops_in_java/while_loop_diagram.png" alt="while_loop_diagram"
+                        width="500" height="500"> <br>
+
+                    <b>Here is the flow of control in a while loop −</b> <br>
+                    <li style="font-size:20px;">Here, <b>statement(s)</b> may be a single statement or a block of
+                        statements. The <b>condition</b> may be any expression, and true is any non zero value.</li>
+                    <li style="font-size:20px;">When executing, if the boolean_expression result is true, then the
+                        actions inside the loop will be executed. This will continue as long as the expression result is
+                        true.</li>
+                    <li style="font-size:20px;">When the condition becomes false, program control passes to the line
+                        immediately following the loop.</li>
+                </p>
+
+                <p class="content_text">
+                    <b>Examples: Calculating Factorial</b> <br>
+                    <img src="Java_content_img/loops_in_java/while_loop_example.png" alt="for_loop_example" width="900"
+                        height="450"> <br>
+                </p>
+
+                <p class="content_text">
+                <div class="info">
+                    <p><strong>The while loop should be used if the condition is boolean or the iteration is not
+                            fixed.</strong></p>
+                </div> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>do-while loop:</b> <br>
+                    A Java control flow statement called a "while loop" lets you run a code block repeatedly as long as
+                    a particular condition holds true. While it is comparable to the while loop, it ensures that the
+                    loop's code block is run at least once before the condition is checked. Because of this, it's
+                    helpful when you want to make sure a specific piece of code runs before the loop termination
+                    condition is verified.. <br>
+                <div class="info">
+                    <b>Because the do-while loop prints at least after checking the condition, it is also known as an
+                        exit controlled loop. <br> <i>The while loop operates at least once</i>.</b>
+                </div>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>Syntax:</b>
+                <pre>
+                    <code>
+                        <b>
+                            do {
+                                // Code to be executed at least once
+                            } while (condition);
+                        </b>
+                    </code>
+                </pre> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Diagram:</b> <br>
+                    <img src="Java_content_img/loops_in_java/do_while_diagram.png" alt="for_loop_diagram" width="400"
+                        height="400"> <br>
+
+                    <b>Here is the flow of control in a do-while loop −</b> <br>
+                    <li style="font-size:20px;">Notice that the Boolean expression appears at the end of the loop, so
+                        the statements in the loop execute once before the Boolean is tested.</li>
+                    <li style="font-size:20px;">If the Boolean expression is true, the control jumps back up to do
+                        statement, and the statements in the loop execute again. This process repeats until the Boolean
+                        expression is false.</li>
+                </p>
+
+                <p class="content_text">
+                    <b>Examples: User Input Validation</b> <br>
+                    <img src="Java_content_img/loops_in_java/do_while_example.png" alt="for_loop_example" width="900"
+                        height="450"> <br>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>The Difference Between For Loop - While Loop - Do-While Loop:</b> <br> <br>
+                <table style="width: 100%;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3>Difference</h3>
+                            </td>
+                            <td>
+                                <h3>For Loop</h3>
+                            </td>
+                            <td>
+                                <h3>While Loop</h3>
+                            </td>
+                            <td>
+                                <h3>Do-While Loop</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Introduction</p>
+                            </td>
+                            <td>
+                                <p>For loop in Java iterates a given set of statements multiple times.</p>
+                            </td>
+                            <td>
+                                <p>The Java while loop executes a set of instructions until a boolean condition is met.
+                                </p>
+                            </td>
+                            <td>
+                                <p>The do-while loop executes a set of statements at least once, even if the condition
+                                    is not met. After the first execution, it repeats the iteration until the boolean
+                                    condition is met.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Best time to use</p>
+                            </td>
+                            <td>
+                                <p>Use it when you know the exact number of times to execute the part of the program.
+                                </p>
+                            </td>
+                            <td>
+                                <p>Use it when you don&rsquo;t know how many times you want the iteration to repeat.</p>
+                            </td>
+                            <td>
+                                <p>Use it when you don&rsquo;t know how many times you want the iteration to repeat, but
+                                    it should execute at least one time.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Syntax</p>
+                            </td>
+                            <td>
+                                <p>for(init; condition; icr/dcr){</p>
+                                <p>//statements to be repeated</p>
+                                <p>}</p>
+                            </td>
+                            <td>
+                                <p>while(condition){</p>
+                                <p>//statements to be repeated</p>
+                                <p>}</p>
+                            </td>
+                            <td>
+                                <p>do{</p>
+                                <p>//statements to be repeated</p>
+                                <p>}while(condition);</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Example</p>
+                            </td>
+                            <td>
+                                <p>for(int x=0; x&lt;=5; x++){</p>
+                                <p>System.out.println(x);</p>
+                                <p>}</p>
+                            </td>
+                            <td>
+                                <p>int x=0;</p>
+                                <p>while(x&lt;=5){</p>
+                                <p>System.out.println(x);</p>
+                                <p>x++;</p>
+                                <p>}</p>
+                            </td>
+                            <td>
+                                <p>int x=0;</p>
+                                <p>do{</p>
+                                <p>System.out.println(x);</p>
+                                <p>x++;</p>
+                                <p>}while(x&lt;=5);</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>for-each loop:</b> <br>
+                    A for each loop is a unique repetition control structure that allows you to design a loop that must
+                    be repeated a certain number of times in an efficient manner. <br>
+                    Even if you don't know how many times a task will be repeated, a for each loop is useful. <br>
+                <div class="info">
+                    <b>for-each loop mainly used with array.</b>
+                </div>
+                </p> <br>
+
+                <p class="content_text">
+                    <b>Syntax:</b>
+                <pre>
+                    <code>
+                        <b>
+                            for(declaration : expression) {
+                                // Statements
+                             }
+                        </b>
+                    </code>
+                </pre> <br>
+                </p>
+
+                <p class="content_text">
+                    <b>Here is the flow of control in a for-each loop −</b> <br>
+                    <li style="font-size:20px;"><b>Declaration</b>- The newly declared block variable, is of a type
+                        compatible with the elements of the array you are accessing. The variable will be available
+                        within the for block and its value would be the same as the current array element.</li>
+                    <li style="font-size:20px;"><b>Expression</b>- This evaluates to the array you need to loop through.
+                        The expression can be an array variable or method call that returns an array</li>
+                </p>
+
+                <p class="content_text">
+                    <b>Examples: Print the numbers from 1 to 10 using for-each loop</b> <br>
+                    <img src="Java_content_img/loops_in_java/for_each_example.png" alt="for_each_loop_example"
+                        width="800" height="400"> <br>
+                </p> <br>
+
+                <p class="content_text">
+                <div class="warning">
+                    <b>What is infinity loop? <br>
+                        An infinite loop is one that runs its code indefinitely without pausing. This can happen if the
+                        loop's termination condition is not properly defined or if the condition always evaluates to
+                        true. Infinite loops are usually unintended and might cause a software to become unresponsive.
+                    </b> <br>
+                    <!-- <b>Example:</b> <br>
+                    <pre>
+                            <code>
+                                <b>
+                                    int count = 10;
+              // An unintentional infinite loop
+                         while (count > 0) {
+                             System.out.println("Countdown: " + count);
+                                 // Missing the decrement statement below
+                                // count--;
+                                    }
+                                 System.out.println("Welcome to World of infinity!!!");
+                                </b>
+                            </code>
+                        </pre> -->
+                </div>
+                </p>
+
+            </section>
+
+
+
+
+
+        </div>
+        <!-- content end -->
+
+        <!-- content nav start -->
+        <nav class="section-nav">
+            <ol>
+                <li><a class="section_nav_text" href="#introduction">Programming language</a></li>
+                <li><a class="section_nav_text" href="#why_language">Why Programming language</a></li>
+                <li><a class="section_nav_text" href="#what_java">What is Java</a></li>
+                <li><a class="section_nav_text" href="#why_java">Why Java</a>
+                <li><a class="section_nav_text" href="#history_java">History of Java</a>
+                <li><a class="section_nav_text" href="#hello_java">First Java Program</a></li>
+                <li><a class="section_nav_text" href="#JDK_setup">Setting Up Java Development Environment</a></li>
+                <li><a class="section_nav_text" href="#program_internal">Program Internal</a></li>
+                <li><a class="section_nav_text" href="#keywords_and_identifiers">Keywards & Identifiers</a></li>
+                <li><a class="section_nav_text" href="#variables">Variables in Java</a></li>
+                <li><a class="section_nav_text" href="#data_types">Data Types in Java</a></li>
+                <li><a class="section_nav_text" href="#garbage_value">Garbage value in Java</a></li>
+                <li><a class="section_nav_text" href="#naming_convention">Naming Convention in Java</a></li>
+                <li><a class="section_nav_text" href="#type_casting">Type Casting in Java</a></li>
+                <li><a class="section_nav_text" href="#user_input">User Input in Java</a></li>
+                <li><a class="section_nav_text" href="#operators">Operators in Java</a></li>
+                <li><a class="section_nav_text" href="#output">Outputs in Java</a></li>
+                <li><a class="section_nav_text" href="#conditional_statements">Conditional Statements</a></li>
+                <li><a class="section_nav_text" href="#ternary_operator">Ternary operator</a></li>
+                <li><a class="section_nav_text" href="#loops">Loops in Java</a></li>
+            </ol>
+        </nav>
+        <!-- content nav end -->
+    </main>
+    <!-- Content Body end -->
+
+
+    <!-- footer Start  -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+                <h2>Edutech</h2>
+                <!-- <br><br> -->
+                <div class="logo"></div>
+                <br><br>
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> +917845123654<br>
+                    <i class="fa-solid fa-envelope"></i>&nbsp;edutech@gmail.com
+                <p class="rights-text">Copyright © <span id="curr_year">
+                    </span> All Rights Reserved by<b>Edutech</b>
+                </p>
+                </p>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Our Newsletter</h1>
+                <div class="border"></div><br>
+                <p>Enter Your Email to get our News and updates.</p>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+<script src="../../Topic_page_assets/topic.js"></script>
+
+</html>

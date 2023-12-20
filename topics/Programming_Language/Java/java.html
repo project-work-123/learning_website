@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Programming</title>
+    
+        <!-- css link -->
+        <link rel="stylesheet" href="../../Topic_page_assets/topic.css">
+    
+    </head>
+    <body>
+
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <img src="logo.svg" alt="Logo Image"> -->
+                <h2 class="nav_logo_topic_page"><a class=" nav_logo_topic_page" href="../../../index.html">EduTech</a></h2>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger_div line1"></div>
+                <div class="hamburger_div line2"></div>
+                <div class="hamburger_div line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li class="nav_links_li">
+                    <a class="nav_links_li_a" href="../../../index.html">Home</a>
+                </li>
+                <li class="nav_links_li">
+                    <a class="nav_links_li_a" href="../../../index.html">Topics</a>
+                </li>
+                <li class="nav_links_li">
+                    <a class="nav_links_li_a" href="../../../index.html#about_section">About</a>
+                </li>
+                <li class="nav_links_li">
+                    <a class="nav_links_li_a" href="../../../index.html#services_section">Services</a>
+                </li>
+                <li class="nav_links_li">
+                    <a class="nav_links_li_a" href="../../../index.html#contactus_section">Contact</a>
+                </li>
+                <!-- <li class="nav_links_li"> -->
+                <div class="srch">
+                    <input type="text" class="search" placeholder="Search here...">
+                    <img src="../../../images/icon/search.png" alt="search" onclick=slide()>
+                </div>
+                <!-- </li> -->
+                <!-- <li><button class="login-button" href="#">Login</button></li>
+                <li><button class="join-button" href="#">Join</button></li> -->
+    
+            </ul>
+    
+        </nav>
+        <!-- Navbar End -->
+    
+        <!-- Content Body start -->
+        <main>
+            <!-- content start -->
+            <div><br>
+                <h1><b>Java</b></h1><br><br>
+                <section id="introduction" class="content_body">
+                    <h2 class="topic_heading">What is programming language?</h2>
+                    <p class="content_text">
+                        A programming language is a way for <b>programmers to communicate with
+                            computers.</b> Programming languages consist of a <b>set of rules</b> that <b>allows</b> values to be
+converted into various ways of generating machine code.
+
+                    </p>
+                    <div class="topic_image_box">
+                        <div class="topic_image_sub_box">
+                            <img onclick="image_open(this)" id="myImg-1"
+                                src="Java_content_img/dummy-programming.jpg" alt="Snow"
+                                style="width:100%;max-width:300px">
+    
+                            <!-- The Modal -->
+                            <div id="myModal1" class="modal">
+                                <span class="close" id="close1">&times;</span>
+                                <img class="modal-content" id="img1">
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section id="why_language" class="content_body">
+                    <h2 class="topic_heading">why do we need a programming language?</h2>
+                    <p class="content_text">
+                        Imagine you want to communicate with a computer to make it do something specific, like playing a game or solving a math problem. Computers only understand a language called <b>"Machine Code,"</b> which is a set of binary numbers <b>(0s and 1s)</b>. However, writing instructions in machine code is incredibly complex and challenging for humans.So, to make things easier for us, we use programming languages. <br>Think of a programming language like a <em>translator between humans and computers.</em> It allows us to write instructions in a way that's much more understandable for us, and then it translates those instructions into machine code that the computer can execute.
+                    </p>
+                    <br>
+                    <h3><b>Example: Making a Sandwich</b></h3><br>
+                    <p>Let's use the analogy of making a sandwich to understand why we need a programming language:</p>
+                    <br>
+                   <ol>
+                    <li>
+                        <p><b>Machine Code (Binary):</b> Imagine if making a sandwich was represented in machine code – a series of 0s and 1s. It might look something like this: 100110110101101010...
+
+                            This is impossible for us to understand and remember for simple tasks like making a sandwich.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Programming Language (English):</b> Now, think of a programming language as a step-by-step recipe in English. It could be something like:</p>
+      
+                        <br>
+                        <pre>
+                            <code>
+                     <b>takeBread();
+                     spreadPeanutButter();
+                     addJelly();
+                     putSlicesTogether();</b>
+                            </code>
+                        </pre>      
+                    </li>
+                    <br>
+                    <li>
+                        <p><b>Translation to Machine Code: </b> A computer, with the help of a special program called a compiler or interpreter, takes our English-like instructions and translates them into the complex machine code it understands.
+
+                            The computer understands our sandwich-making instructions and follows them precisely, just like a chef following a recipe.</p>
+                        </li>
+                   </ol>
+                </section>
+                <section id="what_java" class="content_body">
+                    <h2 class="topic_heading">What is Java?</h2>
+                    <p class="content_text">
+                        Java is a <b>versatile</b> programming language that enables developers to create a wide range of software applications. <em>It's known for its simplicity, readability, and platform independence.</em>
+                    </p>
+                    <br>
+                    <ol>
+                        <li>
+                            <p><b>Simple:</b> Java is a <b>simple programming language and easy to understand</b> because it
+                                does not contain complexities that exist in prior programming languages.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Object-Oriented:</b> Java is an <b>Object Oriented Programming</b> Language, which means in Java <i>everything is written in terms of classes and objects</i>.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Platform independent:</b> The design objective of java people is to develop a language that must work on <i>any platform.</i> Here platform means a type of operating system and hardware technology. Java allows programmers to write their program on <i>any machine with any configuration and to execute it on any other machine having different configurations.</i></p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Portable:</b> <em><a href="https://www.geeksforgeeks.org/why-is-java-write-once-and-run-anywhere/" target="_blank">The WORA</a></em> (Write Once Run Anywhere) concept and platform-independent feature make Java portable.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Robust:</b> The Java Programming language is robust, <em>which means it is capable of handling unexpected termination of a program.</em></p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Memory Management:</b> Java features automatic memory management through <b>garbage collection.</b> Developers don't have to explicitly manage memory allocation and deallocation, reducing the chances of memory-related errors.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Secure:</b> Java also provides security features to the programmers. Security problems like virus threats, tampering, eavesdropping, and impersonation can be handled or minimized using Java.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Multi-threading:</b> In java it enables to create a program that <i>executes multiple tasks concurrently.</i></p>
+                        </li>
+                    </ol>
+                </section>
+                <section id="why_java" class="content_body">
+                    <h2 class="topic_heading">Why to Learn Java?</h2>
+                    <p class="content_text">
+                        Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in <b>Software Development Domain</b>. If you will conduct a servey about the best programming language, Java is sure to come up.<br> <em>Java is fairly easy to learn</em>, so if you are starting to learn any programming language then Java could be your great choice.
+                    </p>
+                    <br>
+                    
+    <ol>
+        <li><p><b>Versatility:</b></p> Imagine you have a magic toolbox that you can use to build different things - a website, a game, or even a mobile app. Java is like that magic toolbox. Once you learn it, you can create many different types of programs.</li><br>
+
+        <li><p><b>Write Once, Run Anywhere:</b></p>Think of it like writing a story in English that can be read by people from different countries without translation. With Java, you write your program once, and it can run on different devices like computers, tablets, or phones.</li><br>
+
+        <li><p><b>Job Opportunities:</b></p>Just as there are many jobs for people who can build houses, there are also many jobs for people who can build software. Learning Java opens up opportunities to work on exciting projects and potentially have a cool job in the future.</li><br>
+    
+        <li><p><b>Big Community and Support:</b></p>Learning Java is like joining a big club where lots of people help each other. If you get stuck or have questions, there are many friendly developers who can help you out. It's like having study buddies for your coding journey.</li><br>
+    
+        <li><p><b>Used in Real-World Projects:</b></p>Imagine you have a chance to help build a game or an app. Java is often used in big projects like these. So, by learning Java, you're preparing yourself to be part of creating something fun or useful for people.</li><br>
+    
+        <li><p><b>Used in Real-World Projects:</b></p>Think of Java as a language that helps you talk to computers and solve puzzles. Learning Java is like becoming a detective for computers, figuring out how to make them do cool things and solve interesting problems.</li>
+    </ol>
+                </section>
+                
+                <section id="history_java" class="content_body">
+                    <h2 class="topic_heading">History of Java</h2>
+                    <p class="content_text">
+                        <b>James Gosling</b> initiated Java language project in <b>June 1991</b> for use in one of his many set-top box projects. The language, initially called <em><b>'Oak'</b></em> after an oak tree that stood outside Gosling's office, also went by the name <em><b>'Green'</b></em> and ended up later being renamed as Java, from a list of random words. <br><br>
+                        <b>1. Java 1.0 (1995):</b> <br>
+                       <em><b>Description:</b></em> Think of this as Java's "birth." It was created by James Gosling and Mike Sheridan at Sun Microsystems. <br>
+ <em><b>Features:</b></em> Like the first version of a video game, Java 1.0 allowed developers to write and run simple programs. <br>
+ <em><b>project:</b></em> Initially named <em>"Oak"</em> and aimed at creating software for consumer electronics. <br>
+                    </p> 
+
+                    <p class="content_text">
+                    <b>2. Java 2 (J2SE 1.2, 1998):</b> <br>
+                       <em><b>Description:</b></em> A big upgrade! It's like getting new levels and features in a game. <br>
+                       <em><b>Features:</b></em> Significant enhancements like <i>Swing GUI toolkit, Collections Framework, and the "assert" keyword</i>. <br>
+                    </p>
+
+                    <p class="content_text">
+                        <b>3. Java 2EE (Early 2000s):</b> <br>
+                        <em><b>Description:</b></em> Imagine Java leveling up to handle bigger tasks, like building powerful websites and business applications. Introduction of <b>J2EE (Java 2 Platform, Enterprise Edition)</b> for enterprise-level applications. <br>
+                           <em><b>Features:</b></em> Emergence of popular frameworks like <b>Spring</b> and <b>Hibernate</b>.<br>
+                        </p>
+
+                        <p class="content_text">
+                            <b>4. Java 17 (2023):</b> <br>
+                               <em><b>Description:</b></em> Java keeps getting better and stronger. Version 17 is like having the latest version of your favorite game. <br>
+                               <em><b>Features:</b></em> Thriving ecosystem with a vast array of libraries, frameworks, and tools. <br>
+                            </p>
+                </section>
+
+                <section id="hello_java" class="content_body">
+                    <h2 class="topic_heading">First Java Program</h2>
+                    <p class="content_text">
+                        <b>Introduction:</b><br>
+                        Welcome to the exciting world of programming! We'll explore a simple Java program that is often the first program people write when learning a new programming language. It's called the "Hello World" program because its main purpose is to display the words "Hello, java!" on the screen.
+                    </p> 
+                    <br>
+                        <pre>
+                            <code>
+                     <b>// This is a simple Java program that prints "Hello, World!" to the console.
+                        public class HelloWorld {
+                            public static void main(String[] args) {
+                                // The next line prints the text "Hello, World!" to the console.
+                                System.out.println("Hello, Java!");
+                            }
+                        }</b>
+                            </code>
+                        </pre>   <br>
+                        <p class="content_text">
+                            <b>Breaking it Down:</b> <br>
+                            <em>Let's understand the different parts of this program:</em><br>
+                            
+                                <p class="content_text"><strong><code>public class HelloWorld { ... }</code>:</strong> This is the starting point of our program. It declares a class named <code>HelloWorld</code>, which is a container for our code.</p> <br>
+                               
+                                <p class="content_text"><strong><code>public static void main(String[] args) { ... }</code>:</strong> Inside the <code>HelloWorld</code> class, we have a method (a block of code) called <code>main</code>. This is the entry point of our program. It's where the computer starts executing our code.</p><br>
+                                
+                                <p class="content_text"><strong><code>System.out.println("Hello, Java!");</code>:</strong> This line is a command that tells the computer to print something on the screen. In this case, it's printing the text "Hello, java!".</p>
+                                
+                         
+                    </p>
+
+                    <!-- <div class="topic_image_box">
+                        <div class="topic_image_sub_box">
+                            <img onclick="image_open(this)" id="myImg-2"
+                                src="Java_content_img/hello_java_code_img.png" alt="Snow"
+                                style="width:100%;max-width:300px">
+    
+                            <!-- The Modal 
+                            <div id="myModal1" class="modal">
+                                <span class="close" id="close1">&times;</span>
+                                <img class="modal-content" id="myImg-2">
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+
+                    
+                    
+                </section>
+
+
+
+            </div>
+            <!-- content end -->
+    
+            <!-- content nav start -->
+            <nav class="section-nav">
+                <ol>
+                    <li><a class="section_nav_text" href="#introduction">Programming language</a></li>
+                    <li><a class="section_nav_text" href="#why_language">Why Programming language</a></li>
+                    <li><a class="section_nav_text" href="#what_java">What is Java</a></li>
+                    <li><a class="section_nav_text" href="#why_java">Why Java</a>
+                    <li><a class="section_nav_text" href="#history_java">History of Java</a>
+                    <li><a class="section_nav_text" href="#hello_java">First Java Program</a>       
+                    </li>
+                </ol>
+            </nav>
+            <!-- content nav end -->
+        </main>
+        <!-- Content Body end -->
+    
+    
+        <!-- footer Start  -->
+        <footer>
+            <div class="footer-container">
+                <div class="left-col">
+                    <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+                    <h2>Edutech</h2>
+                    <!-- <br><br> -->
+                    <div class="logo"></div>
+                    <br><br>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> +917845123654<br>
+                        <i class="fa-solid fa-envelope"></i>&nbsp;edutech@gmail.com
+                        <p class="rights-text">Copyright © <span id="curr_year">
+                            </span> All Rights Reserved by<b>Edutech</b>
+                        </p>
+                    </p>
+                </div>
+                <div class="right-col">
+                    <h1 style="color: #fff">Our Newsletter</h1>
+                    <div class="border"></div><br>
+                    <p>Enter Your Email to get our News and updates.</p>
+                    <form class="newsletter-form">
+                        <input class="txtb" type="email" placeholder="Enter Your Email">
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    
+    
+    </body>
+    
+    <script src="../../Topic_page_assets/topic.js"></script>
+</html>
