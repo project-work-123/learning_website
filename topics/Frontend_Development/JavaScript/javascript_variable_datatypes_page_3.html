@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../../Topic_page_assets/topic.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="logo.svg" alt="Logo Image"> -->
+            <h2 class="nav_logo_topic_page"><a class=" nav_logo_topic_page" href="../../../index.html">EduTech</a></h2>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger_div line1"></div>
+            <div class="hamburger_div line2"></div>
+            <div class="hamburger_div line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html">Topics</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#about_section">About</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#services_section">Services</a>
+            </li>
+            <li class="nav_links_li">
+                <a class="nav_links_li_a" href="../../../index.html#contactus_section">Contact</a>
+            </li>
+            <!-- <li class="nav_links_li"> -->
+            <div class="srch">
+                <input type="text" class="search" placeholder="Search here...">
+                <img src="../../../images/icon/search.png" alt="search" onclick=slide()>
+            </div>
+            <!-- </li> -->
+            <!-- <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li> -->
+
+        </ul>
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content Body start -->
+    <main>
+        <!-- content start -->
+        <div id="body_content"><br>
+            <h1><b>Variables and Datatypes in JavaScript</b></h1><br><br>
+            <section id="introduction" class="content_body">
+                <div class="content_section_container">
+                    <!-- <h2 class="topic_heading">What is JavaScript?</h2> -->
+                    <div>
+                        <p class="content_text">
+                            <b>In JavaScript</b>, variables are used to store and manage data, and there are different
+                            data types that represent the kind of values these variables can hold.
+                        </p><br>
+                        <ul>
+
+                            <!-- what is variable section start -->
+                            <h2 class="topic_heading">What is variable?</h2>
+                            <li>
+                                <p class="content_text">
+                                    A variable is a named container for storing data values. You can think of it as a
+                                    labeled box that holds a specific piece of information. In JavaScript, you can
+                                    declare variables using keywords like <b>var</b>, <b>let</b>, and <b>const</b>.
+                                </p>
+                                <!-- declare variables using var let and const -->
+                                <img src="" alt="">
+                            </li>
+                            <!-- what is variable section end -->
+
+                            <!-- javascript datatypes section start -->
+                            <!-- <h2 class="topic_heading">JavaScript Data Types</h2>
+                            <li>
+                                <p class="content_text">
+                                    JavaScript is a <b>dynamically</b> typed language, which means that variables are
+                                    not
+                                    explicitly declared with data types. Instead, JavaScript determines the data type of
+                                    a variable based on the value it holds. There are several primary data types in
+                                    JavaScript, which can be categorized into two main categories: <b>Primitive
+                                        data-types</b> and <b>Reference/Non-primitive data-types</b>.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>Primitive data-types:</b> In JavaScript are the basic building blocks for
+                                            storing
+                                            and manipulating simple values. They are immutable, meaning their values
+                                            cannot be
+                                            changed once they are assigned. JavaScript has six primitive data types,
+                                            <b>Number,String, Boolean, Undefined, Null, Symbol, BigInt,</b> These
+                                            primitive data
+                                            types are used to store and manipulate simple values in JavaScript. They are
+                                            passed
+                                            by value, meaning when you assign a primitive data type to a variable or
+                                            pass it as
+                                            an argument to a function, you are working with a copy of the actual value.
+                                            This
+                                            copy is independent of the original value, and changes made to one do not
+                                            affect the
+                                            other.
+                                        </p>
+
+                                        <p class="content_text">
+                                            <b>Non-primitive data types:</b> In JavaScript are more complex data
+                                            structures that
+                                            can hold and manipulate collections of values, objects, or functions. Unlike
+                                            primitive data types, non-primitive data types are mutable, meaning their
+                                            values can
+                                            be changed after they are created. JavaScript has four main non-primitive
+                                            data
+                                            types, <b>Object, Array, Function, Date</b> Non-primitive data types are
+                                            essential
+                                            for building complex applications and data structures in JavaScript. They
+                                            can
+                                            contain and manipulate both primitive and non-primitive data types,
+                                            providing
+                                            flexibility and power when developing JavaScript programs. These data types
+                                            are
+                                            often used in conjunction with one another to create more sophisticated
+                                            functionality.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li><br> -->
+                            <!-- javascript datatypes section end -->
+
+                            <!-- why var, let and const section start -->
+                            <h2 class="topic_heading">Why var, let and const came?</h2>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>var</b> is the oldest way to declare variables in JavaScript, and it has
+                                            global or function-level scope, depending on where it is declared.
+                                            Variables declared with <b>var</b> are hoisted, which means they are moved
+                                            to the top of their containing function or global scope during execution.
+                                            <b>var</b> variables can be redeclared within the same scope without any
+                                            errors.
+                                            Generally, <b>var</b> is less commonly used in modern JavaScript due to its
+                                            quirks and limitations. It's still found in older codebases.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>let</b> was introduced in ECMAScript 6 (ES6) and has block-level scope,
+                                            which means it is limited to the block
+                                            (enclosed by curly braces) where it's declared.
+                                            Variables declared with <b>let</b> are also hoisted but are not initialized
+                                            until the point where they are declared.
+                                            Unlike var, <b>let</b> does not allow redeclaration of variables in the same
+                                            scope.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>const</b> is also introduced in ES6 and has block-level scope, similar to
+                                            let.
+                                            Variables declared with <b>const</b> cannot be reassigned after their
+                                            initial assignment. However, it's important to note that the value they hold
+                                            may still be mutable (e.g., if it's an object or array, you can modify its
+                                            properties or elements).
+                                            Like let, <b>const</b> does not allow redeclaration of variables in the same
+                                            scope.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li><br>
+                            <!-- why var, let and const section end -->
+
+                            <!-- where to use section start -->
+                            <h2 class="topic_heading">When we use var, let and const?</h2>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p class="content_text">
+                                            Use <b>const</b> when the variable should never be reassigned after its
+                                            initial assignment. This
+                                            is useful for constants and values that should remain unchanged.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            Use <b>let</b> when the variable may be reassigned, but you want to limit
+                                            its
+                                            scope to a block.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            Use <b>var</b> sparingly, if at all, as it has global or function-level
+                                            scope, which can lead to
+                                            unexpected behavior. It's generally recommended to use <b>let</b> or
+                                            <b>const</b> instead for
+                                            better scoping and maintainability.
+                                        </p>
+                                    </li> <br>
+                                    <p class="content_text">
+                                        In modern JavaScript development, it's common practice to use <b>const</b> by
+                                        default and only use
+                                        <b>let</b> when you know the variable's value will change within the same block
+                                        scope. This helps
+                                        prevent accidental reassignments and leads to more predictable code behavior.
+                                    </p>
+                                </ul>
+                            </li><br>
+                            <!-- where to use section end -->
+
+                            <!-- what is hoisting section start -->
+                            <h2 class="topic_heading">What is hoisting?</h2>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>Hoisting</b> is a JavaScript behavior where variable and function
+                                            declarations are moved to the top of their containing scope during the
+                                            compilation phase before the code is executed. This means that, regardless
+                                            of where a variable or function is declared within its scope, it is
+                                            conceptually moved to the top, allowing you to use it before it's formally
+                                            declared in your code.
+
+                                            However, it's important to understand that hoisting only moves the
+                                            declarations, not the initializations (assigning a value to a variable).
+                                            Let's break down hoisting for both variables and functions:
+
+                                            <ul>
+                                                <li>
+                                                    <p class="content_text">
+                                                        <b>Variable Hoisting:</b> When you declare a variable using var,
+                                                        the declaration is hoisted to the top of its containing function
+                                                        or global scope, but the initialization remains in place.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="content_text">
+                                                        <b>Function Hoisting:</b> Function declarations are hoisted in
+                                                        their entirety, including both the declaration and the function
+                                                        body.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            It's important to note that hoisting occurs differently for <b>var</b>,
+                                            <b>let</b>, and <b>const</b> declarations: <br>
+
+                                            Variables declared with <b>var</b> are hoisted and initialized with
+                                            <b>undefined</b>. <br>
+                                            Variables declared with <b>let</b> and <b>const</b> are hoisted but remain
+                                            uninitialized (in a "temporal dead zone") until
+                                            their actual declaration in the code. Attempting to access them before their
+                                            declaration results in a
+                                            <b>ReferenceError</b>. <br>
+                                            Understanding hoisting is crucial for writing reliable JavaScript code. It's
+                                            a good practice to declare your
+                                            variables and functions at the beginning of their respective scopes to make
+                                            your code more predictable and
+                                            maintainable, even if they are technically hoisted by the JavaScript engine.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li><br>
+                            <!-- what is hoisting section end -->
+
+                            <!-- javascript datatype section start -->
+                            <h2 class="content_heading">JavaScript Data Types</h2>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <p class="content_text">
+                                            JavaScript is a dynamically typed language, which means that variables are
+                                            not explicitly declared with data types. Instead, JavaScript determines the
+                                            data type of a variable based on the value it holds. There are several
+                                            primary data types in JavaScript, which can be categorized into two main
+                                            categories: <b>Primitive data-types</b> and <b>Reference/Non-primitive
+                                                data-types</b>.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="content_text">
+                                            <b>Primitive data-types:</b> in JavaScript are the basic building
+                                            blocks for storing and manipulating simple values. They are
+                                            immutable, meaning their values cannot be changed once they are
+                                            assigned. JavaScript has six primitive data types, <b>Number,String,
+                                                Boolean, Undefined, Null, Symbol, BigInt,</b> These primitive
+                                            data types are used to store and manipulate simple values in
+                                            JavaScript. They are passed by value, meaning when you assign a
+                                            primitive data type to a variable or pass it as an argument to a
+                                            function, you are working with a copy of the actual value. This copy
+                                            is independent of the original value, and changes made to one do not
+                                            affect the other.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Number</b>: Represents both integer and floating-point
+                                                    numbers. JavaScript uses the Number data type for all
+                                                    numeric values.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>String</b>: Represents text and is enclosed in either
+                                                    single <b>('')</b> or double <b>("")</b> quotes.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Boolean</b>: Represents a <b>true</b> or <b>false</b>
+                                                    value.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Undefined</b>: Represents a variable that has been
+                                                    declared but hasn't been assigned a value.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Null</b>: Represents the intentional absence of any value
+                                                    or object.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Symbol</b>: Introduced in ECMAScript 6 (ES6), symbols are
+                                                    unique and immutable values, often used as object property
+                                                    keys.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>BigInt</b>: Introduced in ES11, BigInt is used for
+                                                    working
+                                                    with arbitrarily large integers.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><br>
+                                        <p class="content_text">
+                                            <b>Non-primitive data types</b> in JavaScript are more complex data
+                                            structures that can hold and manipulate collections of values, objects,
+                                            or functions. Unlike primitive data types, non-primitive data types are
+                                            mutable, meaning their values can be changed after they are created.
+                                            JavaScript has four main non-primitive data types, <b>Object, Array,
+                                                Function, Date</b> Non-primitive data types are essential for
+                                            building complex applications and data structures in JavaScript. They
+                                            can contain and manipulate both primitive and non-primitive data types,
+                                            providing flexibility and power when developing JavaScript programs.
+                                            These data types are often used in conjunction with one another to
+                                            create more sophisticated functionality.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Object</b>: Represents a collection of key-value pairs and is
+                                                    used for more complex data structures.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Array</b>: A special type of object that represents a
+                                                    list-like collection of values, indexed by numeric indices.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Function</b>: Functions in JavaScript are objects and can be
+                                                    assigned to variables, passed as arguments, and returned from
+                                                    other functions.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="content_text">
+                                                    <b>Date</b>: Represents dates and times.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- javascript datatype section end -->
+                        </ul>
+
+                    </div>
+                    <!-- <div class="topic_image_box">
+                    <div class="topic_image_sub_box">
+                        <img onclick="image_open(this)" id="myImg-1"
+                            src="../JavaScript/js_content_image/js_dummy_image.png" alt="Snow"
+                            style="width:100%;max-width:300px">
+
+                        The Modal
+                        <div id="myModal1" class="modal">
+                            <span class="close" id="close1">&times;</span>
+                            <img class="modal-content" id="img1">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                    <div class="topic_image_sub_box">
+                        <img onclick="image_open(this)" id="myImg-2"
+                            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230102173834/12-JavaScript-Code-Snippets-That-Every-Developer-Must-Know.png"
+                            alt="Snow" style="width:100%;max-width:300px">
+
+                        The Modal
+                        <div id="myModal2" class="modal">
+                            <span class="close" id="close2">&times;</span>
+                            <img class="modal-content" id="img2">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                    <div class="topic_image_sub_box">
+                        <img onclick="image_open(this)" id="myImg-3"
+                            src="https://chaykelly.com/wp-content/uploads/2020/10/Code-Snippets.jpg" alt="Snow"
+                            style="width:100%;max-width:300px">
+
+                        The Modal
+                        <div id="myModal3" class="modal">
+                            <span class="close" id="close3">&times;</span>
+                            <img class="modal-content" id="img3">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+
+            </section>
+        </div>
+        <!-- content end -->
+
+        <!-- content nav start -->
+        <nav class="section-nav" id="section_nav">
+            <ol>
+                <!-- 1st page sidenav start -->
+                <li><a class="section_nav_text" href="#introduction">Introduction to JavaScript</a></li>
+                <li><a class="section_nav_text" href="#">What is JavaScript?</a></li>
+                <li><a class="section_nav_text" href="#historyofjs">History of Javascript</a></li>
+                <li><a class="section_nav_text" href="#applicationofjs">Application of JavaScript</a></li>
+                <li><a class="section_nav_text" href="#why_light_weight">Why JavaScript is known as a
+                        lightweightprogramming language?</a></li>
+                <li><a class="interpretor_or_compiled" href="#interpretor_or_compiled">Is JavaScript Compiled or
+                        Interpreted or both?</a></li>
+                <li><a class="section_nav_text" href="#jssyntax">JavaScript Syntax</a></li>
+                <!-- 1st page sidenav end -->
+
+                <!-- 2nd page side nav start-->
+                <!-- <li><a class="section_nav_text" href="#whatisvariable">What is Variable?</a></li> -->
+                <li><a class="section_nav_text" href="../JavaScript/javascript_intro_page_2.html#jsoperator">JavaScript
+                        Operator</a></li>
+                <li><a class="section_nav_text"
+                        href="../JavaScript/javascript_intro_page_2.html#jsexpression">JavaScript Expression</a></li>
+                <li><a class="section_nav_text" href="../JavaScript/javascript_intro_page_2.html#jskeyword">JavaScript
+                        Keyword</a></li>
+                <li><a class="section_nav_text" href="../JavaScript/javascript_intro_page_2.html#jscomment">JavaScript
+                        Comment</a></li>
+                <!-- 2nd page side nav end -->
+
+                <!-- 3rd page side nav start -->
+
+                <!-- 3rd page side nav end -->
+
+
+                <!-- <li><a class="section_nav_text" href="#endpoints">Endpoints</a> -->
+                <!-- <ul>
+                        <li class=""><a href="#endpoints--root">Root</a></li>
+                        <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+                        <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
+                        <li class=""><a href="#endpoints--city-config">City Config</a></li>
+                        <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
+                        <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
+                        <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
+                        <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+                    </ul> -->
+                </li>
+            </ol>
+        </nav>
+        <!-- content nav end -->
+    </main>
+    <!-- Content Body end -->
+
+
+    <!-- footer Start  -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+                <h2>Edutech</h2>
+                <!-- <br><br> -->
+                <div class="logo"></div>
+                <!-- <div class="social-media">
+                        <a href="#"><img src="images/icon\fb.png"></a>
+                        <a href="#"><img src="images/icon\insta.png"></a>
+                        <a href="#"><img src="images/icon\tt.png"></a>
+                        <a href="#"><img src="images/icon\ytube.png"></a>
+                        <a href="#"><img src="images/icon\linkedin.png"></a>
+                    </div> -->
+                <br><br>
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> +917845123654<br>
+                    <i class="fa-solid fa-envelope"></i>&nbsp;edutech@gmail.com
+                    <p class="rights-text">Copyright © <span id="curr_year">
+                        </span> All Rights Reserved by<b>Edutech</b>
+                    </p>
+                </p>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Our Newsletter</h1>
+                <div class="border"></div><br>
+                <p>Enter Your Email to get our News and updates.</p>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+</body>
+
+<script src="../../Topic_page_assets/topic.js"></script>
+
+
+
+
+
+
+
+
+
+</html>

@@ -19,6 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+// const body_content = document.getElementById("body_content")
+// const section_nav = document.getElementById("section_nav")
+// const body_content_height = body_content.clientHeight
+// section_nav.style.maxHeight = `${body_content_height}px`
+
 // content js end
 
 // navbar js start
